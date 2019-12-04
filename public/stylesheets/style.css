@@ -1,29 +1,32 @@
-html{
+html
+{
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
-body {
-  padding: 80px;
+
+body
+{
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
-  line-height: 15px;
+  line-height: 15px; 
+  padding: 80px;
+  margin: 0;
   background:
     -webkit-linear-gradient(315deg, hsla(163.86, 94.71%, 49.85%, 1) 0%, hsla(163.86, 94.71%, 49.85%, 0) 70%),
     -webkit-linear-gradient(65deg, hsla(260.82, 96.15%, 41%, 1) 10%, hsla(260.82, 96.15%, 41%, 0) 80%),
     -webkit-linear-gradient(135deg, hsla(304.89, 94.38%, 47.57%, 1) 15%, hsla(304.89, 94.38%, 47.57%, 0) 80%),
     -webkit-linear-gradient(205deg, hsla(251.83, 99.36%, 41.11%, 1) 100%, hsla(251.83, 99.36%, 41.11%, 0) 70%);
+
   background:
     linear-gradient(135deg, hsla(163.86, 94.71%, 49.85%, 1) 0%, hsla(163.86, 94.71%, 49.85%, 0) 70%),
     linear-gradient(25deg, hsla(260.82, 96.15%, 41%, 1) 10%, hsla(260.82, 96.15%, 41%, 0) 80%),
     linear-gradient(315deg, hsla(304.89, 94.38%, 47.57%, 1) 15%, hsla(304.89, 94.38%, 47.57%, 0) 80%),
     linear-gradient(245deg, hsla(251.83, 99.36%, 41.11%, 1) 100%, hsla(251.83, 99.36%, 41.11%, 0) 70%);
-  }
 
-
-background-position: fixed;
-
-  display: block;
-  height: 100%;
+  background-attachment: fixed;
 }
+
 div{
 	margin: 15px 15px 15px 0;
 	display: block;
@@ -53,14 +56,19 @@ a {
 .item-label{
 	margin: 10px;
 	font-style: underline;
-
+  width: 200px;
+  display: inline-block;
+  float: left;
 }
 .item-value{
 	font-weight: bold;
+  display: inline-block;
+  width: calc(100% - 240px);
+  float: left;
 }
 input{
 	width: 100%;
-	padding: 20px 5px;
+	padding: 20px;
 	font-weight: bold;
 	font-size: 40px;
 	margin: 15px 0;

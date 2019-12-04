@@ -5,25 +5,27 @@
     <link rel='stylesheet' href='/public/stylesheets/style.css' />
   </head>
   <body>
+    <div id="background"></div>
+    <div class="content">
+        <div class="image-centered">
+            <img src="/public/LOGO.png" >
+        </div>
 
-    <div class="image-centered">
-        <img src="/public/LOGO.png" >
+        {{#if errors}}
+        <div>
+            {{#each errors}}
+                <div class="alert alert-danger">{{this}}</div>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{#if messages}}
+        <div>
+            {{#each messages}}
+                <div class="alert alert-success">{{this}}</div>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{{body}}}
     </div>
-
-    {{#if errors}}
-    <div>
-        {{#each errors}}
-            <div class="alert alert-danger">{{this}}</div>
-        {{/each}}
-    </div>
-    {{/if}}
-    {{#if messages}}
-    <div>
-        {{#each messages}}
-            <div class="alert alert-success">{{this}}</div>
-        {{/each}}
-    </div>
-    {{/if}}
-    {{{body}}}
   </body>
 </html>

@@ -2,10 +2,12 @@
 {{#if card}}
     <div>
         <div class="item-row">
-            <div class="item-value" placeholder="Номер">{{card.number}}</div>
+            <div class="item-label">Номер</div>
+            <div class="item-value">{{card.number}}</div>
         </div>
         <div class="item-row">
-            <div class="item-value" placeholder="Притежател">{{card.firstName}} {{card.lastName}}</div>
+            <div class="item-label">Притежател</div>
+            <div class="item-value">{{card.firstName}} {{card.lastName}}</div>
         </div>
         <div class="item-row">
             <div class="item-label">Активна</div>
@@ -15,7 +17,6 @@
 {{/if}}
 <div>
     <form action="" method="GET">
-        <label for=""><label for="card-number">Номер:</label>
         <input type="text" name="cardnumber" id="card-number" placeholder="(номер на карта)" value="{{searchedCardNumber}}">
         <input type="submit" name="" value="Покажи">
     </form>
