@@ -10,7 +10,7 @@ const attach = (app, controllersFactory) => {
   router.route('/register', ).get((req, res) => cardsController.register(req, res));
   router.route('/register', ).post((req, res) => cardsController.register(req, res));
 
-  router.route('/', ).get((req, res) => res.redirect(301, '/redeem-stamp'))
+  router.route('/', ).get((req, res) => res.redirect(301, '/check'))
 
   app.use('/', router);
 }
