@@ -66,7 +66,7 @@ input{
 	margin: 15px 0;
 }
 
-h1 { text-align: center; }
+h1 { text-align: center; font-size: 4em;}
 
 .bottom-navigation{
 	list-style: none;
