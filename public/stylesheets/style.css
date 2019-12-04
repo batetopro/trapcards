@@ -53,22 +53,30 @@ a {
 .info-message {
   color: green;
 }
-.item-label{
-	margin: 10px;
-	font-style: underline;
+
+.result-group .item-label {
   width: 200px;
   display: inline-block;
   float: left;
 }
-.item-value{
-	font-weight: bold;
+
+.result-group .item-value {
   display: inline-block;
   width: calc(100% - 240px);
   float: left;
 }
+
+.item-label{
+	margin: 10px;
+}
+
+.item-value{
+	font-weight: bold;
+}
+
 input{
 	width: 100%;
-	padding: 20px;
+	padding: 20px 5px;
 	font-weight: bold;
 	font-size: 40px;
 	margin: 15px 0;
@@ -94,11 +102,12 @@ h1 { text-align: center; font-size: 4em;}
 
 .alert {
     position: relative;
-    padding: .75rem 1.25rem;
-    margin-bottom: 1rem;
+    padding: 1em;
+    margin-bottom: 1em;
     border: 1px solid transparent;
     border-radius: .25rem;
     text-align: center;
+    font-size: 2em;
 }
 
 
