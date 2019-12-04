@@ -43,7 +43,7 @@ const attachTo = (app, controllersFactory) => {
     traverse(__dirname);
 
     app.get('*', (req, res) => {
-        res.redirect('/404');
+        res.redirect('/add');
     });
 };
 
