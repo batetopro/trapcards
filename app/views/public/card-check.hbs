@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+{{#if card}}
+    <div>
+        <div class="item-row">
+            <div class="item-value" placeholder="Номер">{{card.number}}</div>
+        </div>
+        <div class="item-row">
+            <div class="item-value" placeholder="Притежател">{{card.firstName}} {{card.lastName}}</div>
+        </div>
+        <div class="item-row">
+            <div class="item-label">Активна</div>
+            <div class="item-value {{#if card.isActive}}card-active{{else}}card-inactive{{/if}}">{{#if card.isActive}}Да!{{else}}Не{{/if}}</div>
+        </div>
+    </div>
+{{/if}}
+<div>
+    <form action="" method="GET">
+        <label for=""><label for="card-number">Номер:</label>
+        <input type="text" name="cardnumber" id="card-number" placeholder="(номер на карта)" value="{{searchedCardNumber}}">
+        <input type="submit" name="" value="Покажи">
+    </form>
+</div>
+
+<ul class="bottom-navigation">
+    <li><a href="/register">Регистрация</a></li>
+    <li><a href="/add">Въвеждане на талон</a></li>
+</ul>

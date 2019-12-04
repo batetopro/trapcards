@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+body {
+  padding: 80px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  line-height: 15px;
+  background:
+    -webkit-linear-gradient(315deg, hsla(163.86, 94.71%, 49.85%, 1) 0%, hsla(163.86, 94.71%, 49.85%, 0) 70%),
+    -webkit-linear-gradient(65deg, hsla(260.82, 96.15%, 41%, 1) 10%, hsla(260.82, 96.15%, 41%, 0) 80%),
+    -webkit-linear-gradient(135deg, hsla(304.89, 94.38%, 47.57%, 1) 15%, hsla(304.89, 94.38%, 47.57%, 0) 80%),
+    -webkit-linear-gradient(205deg, hsla(251.83, 99.36%, 41.11%, 1) 100%, hsla(251.83, 99.36%, 41.11%, 0) 70%);
+  background:
+    linear-gradient(135deg, hsla(163.86, 94.71%, 49.85%, 1) 0%, hsla(163.86, 94.71%, 49.85%, 0) 70%),
+    linear-gradient(25deg, hsla(260.82, 96.15%, 41%, 1) 10%, hsla(260.82, 96.15%, 41%, 0) 80%),
+    linear-gradient(315deg, hsla(304.89, 94.38%, 47.57%, 1) 15%, hsla(304.89, 94.38%, 47.57%, 0) 80%),
+    linear-gradient(245deg, hsla(251.83, 99.36%, 41.11%, 1) 100%, hsla(251.83, 99.36%, 41.11%, 0) 70%);
+  }
+
+
+background-position: fixed;
+
+  display: block;
+  height: 100%;
+}
+div{
+	margin: 15px 15px 15px 0;
+	display: block;
+}
+div.item-row{
+	margin: 0;
+}
+a {
+  color: yellow;
+  font-size: 60px;
+  padding: 15px;
+  margin: 25px;
+  display: block;
+}
+.card-active {
+  color: green;
+}
+.card-inactive {
+  color: red;
+}
+.error-message {
+  color: red;
+}
+.info-message {
+  color: green;
+}
+.item-label{
+	margin: 10px;
+	font-style: underline;
+
+}
+.item-value{
+	font-weight: bold;
+}
+input{
+	width: 100%;
+	padding: 20px 5px;
+	font-weight: bold;
+	font-size: 40px;
+	margin: 15px 0;
+}
+
+h1 { text-align: center; }
+
+.bottom-navigation{
+	list-style: none;
+	text-align: center;
+}
+
+.bottom-navigation li
+{
+	display: inline-block;
+}
+
+.bottom-navigation a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.image-centered img{
+	display: block;
+	margin: 0 auto;
+}

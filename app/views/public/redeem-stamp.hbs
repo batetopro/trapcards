@@ -1,0 +1,21 @@
+<h1>
+    {{title}}
+</h1>
+<div>
+    <form action="" method="GET">
+        <div class="item-row">
+            <div class="item-value"><input placeholder="Карта номер" type="text" name="cardnumber" id="card-number" value="{{cardNumber}}"></div>
+        </div>
+        <div class="item-row">
+            <div class="item-value"><input placeholder="Талон код" type="text" name="stampcode" id="stamp-code" value="{{stampCode}}"></div>
+        </div>
+        <div class="item-row">
+            <input type="submit" value="Въведи">
+        </div>
+    </form>
+
+    <ul class="bottom-navigation">
+        <li><a href="/register">Регистрация</a></li>
+        <li><a href="/check">Въвеждане на талон</a></li>
+    </ul>
+</div>

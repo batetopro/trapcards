@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/public/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <div class="image-centered">
+        <img src="/public/LOGO.png" >
+    </div>
+
+    {{#if errors}}
+    <div>
+        {{#each errors}}
+            <div class="alert alert-danger">{{this}}</div>
+        {{/each}}
+    </div>
+    {{/if}}
+    {{#if messages}}
+    <div>
+        {{#each messages}}
+            <div class="alert alert-success">{{this}}</div>
+        {{/each}}
+    </div>
+    {{/if}}
+    {{{body}}}
+  </body>
+</html>
