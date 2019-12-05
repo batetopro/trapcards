@@ -50,7 +50,7 @@ class CardsController {
             }
 
             if (hasError) {
-                req.flash('error', 'Кодът на талона е грешен, номерът на картата е грешен или талонът е вече използван!');
+                req.flash('error', 'Използван или несъществуващ талон / карта!');
             } else {
                 req.flash('info', `Талон с код ${stamp.code} е въведен в карта номер ${card.number}.`);
                 stampCode = null;

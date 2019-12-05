@@ -55,15 +55,20 @@ a {
 }
 
 .result-group .item-label {
-  width: 200px;
+  width: calc(50% - 120px);
   display: inline-block;
   float: left;
+  text-align: right;
+  font-size: 3em;
+  line-height: 1em;
 }
 
 .result-group .item-value {
+  width: calc(50% - 120px);
   display: inline-block;
-  width: calc(100% - 240px);
   float: left;
+  font-size: 3em;
+  line-height: 1em;
 }
 
 .item-label{
