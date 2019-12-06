@@ -87,7 +87,11 @@ input{
 	margin: 15px 0;
 }
 
-h1 { text-align: center; font-size: 4em;}
+h1 {
+  text-align: center; 
+  font-size: 4em;
+  line-height: 1em
+}
 
 .bottom-navigation{
 	list-style: none;
